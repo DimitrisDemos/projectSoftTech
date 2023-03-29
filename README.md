@@ -1,4 +1,4 @@
-# projectSoftTech
+# projectSoftEng
 
 Σχεδιασμός εφαρμογής με το όνομα ParkRadar στα πλαίσια του μαθήματος "Τεχνολογία Λογισμικού" του CEID UoP.
 
