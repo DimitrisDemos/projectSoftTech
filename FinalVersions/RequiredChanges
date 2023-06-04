@@ -4,19 +4,19 @@ DONE
 
 ✓Sequence allages COSTUMER CITIZEN USER KAI ALLA ✓
 
-REMAINING
-
-Team plan + Project plan
-> pertt + gant changes DIMITRA
-
-ProjectCode 
-> perigrafi + eisagwgi dikwn mas parking + eikones gia agapimena, log in, check in + payment + toolbar DIMITRIS
-
-Class diagram
+✓Team plan + Project plan
+> pertt + gant changes DIMITRA✓
 
 ✓Robustness
 ✓> debt LAZAROS
 ✓rename robostness to v1.0
 ✓rename usecase to v1.0
+
+REMAINING
+
+ProjectCode 
+> perigrafi + eisagwgi dikwn mas parking + eikones gia agapimena, log in, check in + payment + toolbar DIMITRIS
+
+Class diagram
 
 Project Plan EMMANUELA
