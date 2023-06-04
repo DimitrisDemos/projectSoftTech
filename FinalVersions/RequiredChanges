@@ -14,7 +14,9 @@ ProjectCode
 
 Class diagram
 
-Robustness
-> debt LAZAROS
+✓Robustness
+✓> debt LAZAROS
+✓rename robostness to v1.0
+✓rename usecase to v1.0
 
 Project Plan EMMANUELA
