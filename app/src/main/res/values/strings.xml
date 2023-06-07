@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">ParkRadar0.2</string>
+    <string name="API_KEY">AIzaSyCKchdtXcgLCyD93vRpY6n2acY5AlPEKZM</string>
+    <string name="parkradar">ParkRadar</string>
+    <string name="login_string">Already have an account? <b>Login here.</b></string>
+    <string name="open_navigation_drawer">Open Drawer</string>
+    <string name="close_navigation_drawer">Open Drawer</string>
+    <string name="login">Login</string>
+</resources>

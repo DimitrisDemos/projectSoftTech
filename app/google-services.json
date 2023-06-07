@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "382495092342",
+    "project_id": "parkradar02",
+    "storage_bucket": "parkradar02.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:382495092342:android:e2d5b4e9ea1e93ceac7957",
+        "android_client_info": {
+          "package_name": "com.example.parkradar02"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "382495092342-qutme5c15cbncsq4e8vgjp5j9giidvbf.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAtQG-7g1rbw5QA0hhLGXyQr-WVqci9yDo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "382495092342-qutme5c15cbncsq4e8vgjp5j9giidvbf.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
