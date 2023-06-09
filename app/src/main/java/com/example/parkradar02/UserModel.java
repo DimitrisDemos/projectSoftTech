@@ -4,9 +4,6 @@ public class UserModel {
     String email, username, image;
     boolean isNotificationEnable;
 
-    public UserModel() {
-    }
-
     public UserModel(String email, String username, String image, boolean isNotificationEnable) {
         this.email = email;
         this.username = username;

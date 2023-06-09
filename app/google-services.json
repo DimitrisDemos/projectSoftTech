@@ -1,6 +1,7 @@
 {
   "project_info": {
     "project_number": "382495092342",
+    "firebase_url": "https://parkradar02-default-rtdb.firebaseio.com",
     "project_id": "parkradar02",
     "storage_bucket": "parkradar02.appspot.com"
   },

@@ -79,6 +79,8 @@ dependencies {
     implementation 'de.hdodenhof:circleimageview:3.1.0'
 
     // Navigation Component
+    //noinspection GradleDependency
     implementation "androidx.navigation:navigation-fragment:$nav_version"
+    //noinspection GradleDependency
     implementation "androidx.navigation:navigation-ui:$nav_version"
 }

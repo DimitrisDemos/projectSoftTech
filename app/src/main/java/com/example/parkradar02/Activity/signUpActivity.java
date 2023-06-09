@@ -48,9 +48,9 @@ public class signUpActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         binding = ActivitySignUpBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
-        appPermissions = new AppPermissions();
+      /*  appPermissions = new AppPermissions();
         loadingDialog = new LoadingDialog(this);
-        storageReference = FirebaseStorage.getInstance().getReference();
+        storageReference = FirebaseStorage.getInstance().getReference();*/
 
         binding.btnBack.setOnClickListener(view -> {
             onBackPressed();
@@ -60,7 +60,7 @@ public class signUpActivity extends AppCompatActivity {
             onBackPressed();
         });
 
-        binding.btnSignUp.setOnClickListener(view -> {
+       /* binding.btnSignUp.setOnClickListener(view -> {
             if (areFieldReady()) {
                 if (imageUri != null) {
                     signUp();
@@ -75,9 +75,9 @@ public class signUpActivity extends AppCompatActivity {
             } else {
                 appPermissions.requestStoragePermission(this);
             }
-        });
+        });*/
     }
-    private void pickImage() {
+   /* private void pickImage() {
         CropImage.activity()
                 .setCropShape(CropImageView.CropShape.OVAL)
                 .start(this);
@@ -226,5 +226,5 @@ public class signUpActivity extends AppCompatActivity {
             }
         }
     }
-
+    */
 }

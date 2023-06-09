@@ -4,7 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="300dp">
 
-    <com.google.android.material.search.SearchView
+    <com.github.florent37.shapeofview.shapes.ArcView
         android:id="@+id/header"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -16,6 +16,13 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:background="@color/primaryColor">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:alpha="0.8"
+                android:scaleType="centerCrop"
+                android:src="@drawable/header_background" />
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -36,7 +43,7 @@
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
                     android:layout_marginTop="10dp"
-                    android:text="Muhammad Adnan"
+                    android:text="@string/muhammad_adnan"
                     android:textColor="@color/white"
                     android:textStyle="bold" />
 
@@ -46,13 +53,13 @@
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
                     android:layout_marginTop="2dp"
-                    android:text="MuhammadAdnan@gmail.com"
+                    android:text="@string/muhammadadnan_gmail_com"
                     android:textColor="@color/white"
                     android:textStyle="bold" />
             </LinearLayout>
 
         </RelativeLayout>
 
-    </com.google.android.material.search.SearchView>
+    </com.github.florent37.shapeofview.shapes.ArcView>
 
 </RelativeLayout>

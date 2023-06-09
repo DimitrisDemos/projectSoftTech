@@ -37,15 +37,15 @@ public class LogInActivity extends AppCompatActivity {
         binding.txtForgetPassword.setOnClickListener(view -> {
             startActivity(new Intent(LogInActivity.this, ForgetActivity.class));
         });
-        binding.btnLogin.setOnClickListener(view -> {
+       /* binding.btnLogin.setOnClickListener(view -> {
             if (areFieldReady()) {
                 login();
             }
-        });
+        });*/
         
     }
 
-        private void login() {
+    /*    private void login() {
             loadingDialog.startLoading();
             FirebaseAuth firebaseAuth = FirebaseAuth.getInstance();
             firebaseAuth.signInWithEmailAndPassword(email, password).addOnCompleteListener(new OnCompleteListener<AuthResult>() {
@@ -112,5 +112,5 @@ public class LogInActivity extends AppCompatActivity {
             return true;
         }
 
-    }
+    }*/
 }

@@ -1,7 +1,9 @@
 package com.example.parkradar02;
 
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.ActionBarDrawerToggle;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.core.view.GravityCompat;
 import androidx.navigation.NavController;
 import androidx.navigation.Navigation;
 import androidx.navigation.ui.NavigationUI;
@@ -10,29 +12,40 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.TextView;
 
+import com.bumptech.glide.Glide;
+import com.example.parkradar02.R;
+import com.example.parkradar02.UserModel;
 import com.example.parkradar02.databinding.ActivityMainBinding;
 import com.example.parkradar02.databinding.NavDrawerLayoutBinding;
 import com.example.parkradar02.databinding.ToolbarLayoutBinding;
 import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.database.DataSnapshot;
+import com.google.firebase.database.DatabaseError;
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
+import com.google.firebase.database.ValueEventListener;
 
 import de.hdodenhof.circleimageview.CircleImageView;
 
 public class MainActivity extends AppCompatActivity {
 
-    private CircleImageView imgHeader;
-    private TextView txtName, txtEmail;
+    private NavDrawerLayoutBinding navDrawerLayoutBinding;
+    private ActivityMainBinding activityMainBinding;
+    private ToolbarLayoutBinding toolbarLayoutBinding;
 
-    @Override
+/*
+
+    private FirebaseAuth firebaseAuth;
+    private CircleImageView imgHeader;
+    private TextView txtName, txtEmail;*/
+
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        com.example.parkradar02.databinding.NavDrawerLayoutBinding navDrawerLayoutBinding = NavDrawerLayoutBinding.inflate(getLayoutInflater());
+        navDrawerLayoutBinding = NavDrawerLayoutBinding.inflate(getLayoutInflater());
         setContentView(navDrawerLayoutBinding.getRoot());
-        com.example.parkradar02.databinding.ActivityMainBinding activityMainBinding = navDrawerLayoutBinding.mainActivity;
-        com.example.parkradar02.databinding.ToolbarLayoutBinding toolbarLayoutBinding = activityMainBinding.toolbar;
-
+        activityMainBinding = navDrawerLayoutBinding.mainActivity;
+        toolbarLayoutBinding = activityMainBinding.toolbar;
         setSupportActionBar(toolbarLayoutBinding.toolbar);
-
-        FirebaseAuth firebaseAuth = FirebaseAuth.getInstance();
 
         ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(
                 this,
@@ -44,8 +57,15 @@ public class MainActivity extends AppCompatActivity {
 
         navDrawerLayoutBinding.navDrawer.addDrawerListener(toggle);
         toggle.syncState();
+       /*
 
-      /*  NavController navController = Navigation.findNavController(this, R.id.fragmentContainer);
+
+        firebaseAuth = FirebaseAuth.getInstance();
+
+
+
+
+        NavController navController = Navigation.findNavController(this, R.id.fragmentContainer);
         NavigationUI.setupWithNavController(
                 navDrawerLayoutBinding.navigationView,
                 navController
@@ -60,6 +80,14 @@ public class MainActivity extends AppCompatActivity {
         getUserData();
     */
 
-
     }
+
+   /* @Override
+    public void onBackPressed() {
+
+        if (navDrawerLayoutBinding.navDrawer.isDrawerOpen(GravityCompat.START))
+            navDrawerLayoutBinding.navDrawer.closeDrawer(GravityCompat.START);
+        else
+            super.onBackPressed();
+    }*/
 }
